@@ -3,16 +3,25 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    background-color: rgb(85, 85, 85);
+}
+
+.container{
     display: flex;
     flex-direction: column;
+    max-width: 2048px;
+    margin-left: auto;
+    margin-right: auto;
     flex: 1;
-    
+    background-color: white;
 }
 
 .header, .upper-section{
     background-color:#1f2937;
     display: flex;
-    padding: 20px 150px
+    padding: 20px 150px;
 }
 
 .header{
@@ -31,11 +40,10 @@ body {
 }
 
 .upper-section{
-    padding: 150px;
+    padding: 75px 150;
     display: flex;
     gap: 50px;
-    flex: 1;
-    width: 100%;
+    /*flex: 1;*/
     justify-content: center;
 }
 
@@ -61,7 +69,7 @@ button{
     padding: 5px 50px;
     border-radius: 6px;
     font-weight: 800;
-    margin-top: 20px;
+    margin: 40px;
     border: white solid 3px;
     font-size: 24px;
 }
@@ -84,12 +92,19 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
 }
 
 .picture-holder{
     display: flex;
     margin: 40px 200px 100px 200px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pic{
@@ -99,13 +114,20 @@ button{
     border-radius: 10px;
 }
 
+.pic-text{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
 .testimonial{
     background-color: #e5e7eb;
     display: flex;
     font-size: 36px;
     font-style: italic;
     flex-direction: column;
-    padding: 100px 250px
+    padding: 100px 150px;
 }
 
 .testimonial-name{
@@ -118,25 +140,24 @@ button{
 .call-to-action{
     display: flex;
     background-color: #3882F6;
-    padding: 100px 50px;
-    margin: 150px 150px;
+    padding: 50px 50px;
+    margin: 150px auto 150px auto;
     border-radius: 15px;
     justify-content: space-evenly;
+    width: 70%;
+
 }
 
 .call-text-title{
     color: #F9FAF8;
     font-size: 36px;
+    background-color: #3882F6;
 }
 
 .call-text{
     color: #e5e7eb;
     font-size: 26px;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
+    background-color: #3882F6;
 }
 
 .footer{
@@ -145,5 +166,6 @@ button{
     padding: 40px;
     color:#e5e7eb;
     font-size: 20px;
-    text-align:center
+    text-align:center;
+    margin-top: auto;
 }
